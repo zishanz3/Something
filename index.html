@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="backgroundMusic" src="background-music.mp3" loop></audio>
+    <audio id="buttonClickSound" src="button-click.mp3"></audio>
+    
+    <div class="card" id="card">
+        <div class="header-image-container">
+            <img src="person-or-cake.jpg" alt="Person or Cake" class="header-image">
+        </div>
+        <h1>Happy Birthday!</h1>
+        <p class="message">To the most wonderful person, you make my life complete. I hope your day is filled with love, joy, and all your favorite things!</p>
+        <button id="surpriseButton">Click for a Surprise</button>
+        <p class="hidden-message" id="hiddenMessage">I love you to the moon and back! 🌙❤️</p>
+    </div>
+
+    <div class="second-page" id="secondPage">
+        <div class="second-page-content">
+            <div class="second-image-container">
+                <img src="second-image.gif" alt="Second Page Image" class="second-image">
+            </div>
+            <div class="custom-message-container">
+                <p class="custom-message">On your special day, I want to remind you just how much you mean to me. You light up my world with your smile, and I am so grateful for every moment we share. May your birthday be as wonderful and amazing as you are! 🎉💖</p>
+                <p class="custom-message">I can't wait to create more beautiful memories together. You are my sunshine, my confidant, and my forever love. Happy Birthday, my dearest! 🎂🌹</p>
+            </div>
+        </div>
+        <button id="nextSurpriseButton">Next Surprise</button>
+    </div>
+
+    <div class="slideshow-page" id="slideshowPage">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="slide1.jpg" alt="Slide 1" class="slide-image">
+                <div class="slide-text-container">
+                    <p class="slide-message">You light up my life with your love.</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="slide2.jpg" alt="Slide 2" class="slide-image">
+                <div class="slide-text-container">
+                    <p class="slide-message">Every moment with you is a treasure.</p>
+                </div>
+            </div>
+            <!-- More slides here... -->
+			 <div class="slide fade">
+                <img src="slide3.jpg" alt="Slide 3" class="slide-image">
+                <div class="slide-text-container">
+                    <p class="slide-message">Your smile is my favorite thing in the world.</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="slide4.jpg" alt="Slide 4" class="slide-image">
+                <div class="slide-text-container">
+                    <p class="slide-message">You are my best friend and soulmate.</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="slide5.jpg" alt="Slide 5" class="slide-image">
+                <div class="slide-text-container">
+                    <p class="slide-message">I cherish every memory we've made together.</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="slide6.jpg" alt="Slide 6" class="slide-image">
+                <div class="slide-text-container">
+                    <p class="slide-message">You make my world a better place.</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="slide7.jpg" alt="Slide 7" class="slide-image">
+                <div class="slide-text-container">
+                    <p class="slide-message">I can't wait to see what the future holds for us.</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="slide8.jpg" alt="Slide 8" class="slide-image">
+                <div class="slide-text-container">
+                    <p class="slide-message">You are my everything.</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="slide9.jpg" alt="Slide 9" class="slide-image">
+                <div class="slide-text-container">
+                    <p class="slide-message">I love you more every day.</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="slide10.jpg" alt="Slide 10" class="slide-image">
+                <div class="slide-text-container">
+                    <p class="slide-message">You mean the world to me.</p>
+                </div>
+            </div>
+        </div>
+        <button id="nextButton">Next</button>
+    </div>
+	
+    <div class="final-message-container" id="finalMessageContainer">
+        <h1 class="final-message">I will love you Forever</h1>
+        <button id="giftButton">Click here for your Gift</button>
+    </div>
+
+    <div class="gift-selection-page" id="giftSelectionPage">
+        <h1>Select Your Gift</h1>
+        <div class="gift-option">
+            <img src="gift1.jpg" alt="Gift 1" class="gift-image">
+            <button class="gift-select-button" data-gift="Gift 1">Gift 1 Name</button>
+        </div>
+        <div class="gift-option">
+            <img src="gift2.jpg" alt="Gift 2" class="gift-image">
+            <button class="gift-select-button" data-gift="Gift 2">Gift 2 Name</button>
+        </div>
+        <div class="gift-option">
+            <img src="gift3.jpg" alt="Gift 3" class="gift-image">
+            <button class="gift-select-button" data-gift="Gift 3">Gift 3 Name</button>
+        </div>
+    </div>
+
+    <div id="heartContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
