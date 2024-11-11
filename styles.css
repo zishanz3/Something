@@ -11,7 +11,7 @@ body {
     margin: 0;
     color: white;
     overflow: hidden;
-    animation: animateBackground 30s linear infinite;
+    animation: animateBackground 30s linear infinite; /* Speed increased */
 }
 
 @keyframes animateBackground {
@@ -27,10 +27,10 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 85%; /* Increase the width */
-    max-width: 600px; /* Fixed max width */
+    max-width: 600px;
+    width: 90%;
     text-align: center;
-    padding: 60px; /* Increase padding for larger content */
+    padding: 40px;
     display: none; /* Hide all pages initially */
     flex-direction: column;
     align-items: center;
@@ -42,29 +42,29 @@ body {
 }
 
 .card {
-    display: flex;
+    display: flex; /* Show only the first card */
 }
 
 .header-image, .second-image, .slide-image {
-    max-width: 70%; /* Increase image size */
+    max-width: 60%;
     border-radius: 10px;
 }
 
 .card h1, .second-page h1, .slideshow-page h1, .final-message, .gift-page h2 {
     color: #ffffff;
-    font-size: 3.5em; /* Increase font size */
+    font-size: 2em;
 }
 
 .card p, .second-page p, .slideshow-page p, .gift-page p {
     color: #ffffff;
-    font-size: 1.8em; /* Larger font size */
+    font-size: 1.2em;
 }
 
 button {
     background-color: #ff6347;
     color: #ffffff;
     border: none;
-    padding: 15px 30px; /* Increase padding */
+    padding: 10px 20px;
     margin-top: 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -85,7 +85,7 @@ button:active {
     display: none;
     margin-top: 20px;
     color: #ff6347;
-    font-size: 1.5em; /* Adjusted size */
+    font-size: 1.2em;
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -96,6 +96,10 @@ button:active {
     flex-direction: column;
 }
 
+.slide.fade {
+    animation: fadeIn 2s ease-in-out;
+}
+
 .final-slide .final-message {
     font-size: 2.5em;
     color: #ff6347;
@@ -103,10 +107,26 @@ button:active {
     padding: 20px;
 }
 
+.gift-page {
+    display: none; /* Hide gift page initially */
+}
+
+.gift-options {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.gift-option img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
 
 .heart {
     position: absolute;
-    font-size: 2.5em; /* Adjust heart size */
+    font-size: 2em;
     animation: floatUp 1s ease-in-out forwards;
 }
 
@@ -123,27 +143,26 @@ button:active {
 
 @media (max-width: 600px) {
     .card, .second-page, .slideshow-page, .gift-page {
-        padding: 30px; /* Increased padding */
-        width: 90%;
+        padding: 20px;
+        max-width: 90%;
     }
 
     .card h1, .second-page h1, .slideshow-page h1 {
-        font-size: 2em; /* Slightly larger text for small screens */
+        font-size: 1.5em;
     }
 
     .card p, .second-page p, .slideshow-page p {
-        font-size: 1.5em; /* Increased font size for better readability */
+        font-size: 1em;
     }
 
     .header-image, .second-image, .slide-image {
-        max-width: 85%; /* Larger image on small screens */
+        max-width: 80%;
     }
 
     .final-message {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 }
-
 
 @keyframes fadeIn {
     from {
@@ -173,4 +192,57 @@ button:active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.final-message {
+    font-size: 3.5em;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+#giftButton {
+    margin-top: 20px;
+}
+
+/* Styles for the gift selection page */
+.gift-selection-page {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gift-option {
+    margin: 20px 0;
+}
+
+.gift-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gift-select-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Pacifico', cursive;
+}
+
+.gift-select-button:hover {
+    background-color: #ff4500;
 }
