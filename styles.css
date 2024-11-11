@@ -28,9 +28,9 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    width: 90%;
+    width: 85%;
     text-align: center;
-    padding: 40px;
+    padding: 60px;
     display: none; /* Hide all pages initially */
     flex-direction: column;
     align-items: center;
@@ -46,25 +46,25 @@ body {
 }
 
 .header-image, .second-image, .slide-image {
-    max-width: 60%;
+    max-width: 70%;
     border-radius: 10px;
 }
 
 .card h1, .second-page h1, .slideshow-page h1, .final-message, .gift-page h2 {
     color: #ffffff;
-    font-size: 2em;
+    font-size: 3.5em;
 }
 
 .card p, .second-page p, .slideshow-page p, .gift-page p {
     color: #ffffff;
-    font-size: 1.2em;
+    font-size: 1.8em;
 }
 
 button {
     background-color: #ff6347;
     color: #ffffff;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 30px;
     margin-top: 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -85,7 +85,7 @@ button:active {
     display: none;
     margin-top: 20px;
     color: #ff6347;
-    font-size: 1.2em;
+    font-size: 1.5em;
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -118,8 +118,8 @@ button:active {
 }
 
 .gift-option img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -143,24 +143,24 @@ button:active {
 
 @media (max-width: 600px) {
     .card, .second-page, .slideshow-page, .gift-page {
-        padding: 20px;
+        padding: 30px;
         max-width: 90%;
     }
 
     .card h1, .second-page h1, .slideshow-page h1 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .card p, .second-page p, .slideshow-page p {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     .header-image, .second-image, .slide-image {
-        max-width: 80%;
+        max-width: 85%;
     }
 
     .final-message {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 }
 
