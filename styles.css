@@ -1,5 +1,5 @@
 body {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Allura', cursive;
     background-image: url('full-background.jpg');
     background-size: cover;
     background-position: center;
@@ -52,12 +52,12 @@ body {
 
 .card h1, .second-page h1, .slideshow-page h1, .final-message, .gift-page h2 {
     color: #ffffff;
-    font-size: 2em;
+    font-size: 4vw; /* Use viewport width for better responsiveness */
 }
 
 .card p, .second-page p, .slideshow-page p, .gift-page p {
     color: #ffffff;
-    font-size: 1.2em;
+    font-size: 2vw; /* Adjust text size based on viewport width */
 }
 
 button {
@@ -148,11 +148,11 @@ button:active {
     }
 
     .card h1, .second-page h1, .slideshow-page h1 {
-        font-size: 1.5em;
+        font-size: 1.8em; /* Adjust heading size for small screens */
     }
 
     .card p, .second-page p, .slideshow-page p {
-        font-size: 1em;
+        font-size: 1.2em; /* Adjust paragraph text for readability */
     }
 
     .header-image, .second-image, .slide-image {
@@ -160,7 +160,7 @@ button:active {
     }
 
     .final-message {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 }
 
@@ -172,8 +172,6 @@ button:active {
         opacity: 1;
     }
 }
-
-/* All previous CSS remains the same */
 
 /* Additional styles for the final message container */
 .final-message-container {
