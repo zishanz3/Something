@@ -103,22 +103,6 @@ button:active {
     padding: 20px;
 }
 
-.gift-page {
-    display: none;
-}
-
-.gift-options {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.gift-option img {
-    width: 120px; /* Adjust size for images */
-    height: 120px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
 
 .heart {
     position: absolute;
