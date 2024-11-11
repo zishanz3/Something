@@ -1,5 +1,5 @@
 body {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Allura', cursive;
     background-image: url('full-background.jpg');
     background-size: cover;
     background-position: center;
@@ -11,7 +11,7 @@ body {
     margin: 0;
     color: white;
     overflow: hidden;
-    animation: animateBackground 30s linear infinite; /* Speed increased */
+    animation: animateBackground 30s linear infinite;
 }
 
 @keyframes animateBackground {
@@ -27,10 +27,10 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 90%;
+    width: 85%; /* Increase the width */
+    max-width: 600px; /* Fixed max width */
     text-align: center;
-    padding: 40px;
+    padding: 60px; /* Increase padding for larger content */
     display: none; /* Hide all pages initially */
     flex-direction: column;
     align-items: center;
@@ -42,29 +42,29 @@ body {
 }
 
 .card {
-    display: flex; /* Show only the first card */
+    display: flex;
 }
 
 .header-image, .second-image, .slide-image {
-    max-width: 60%;
+    max-width: 70%; /* Increase image size */
     border-radius: 10px;
 }
 
 .card h1, .second-page h1, .slideshow-page h1, .final-message, .gift-page h2 {
     color: #ffffff;
-    font-size: 2em;
+    font-size: 3.5em; /* Increase font size */
 }
 
 .card p, .second-page p, .slideshow-page p, .gift-page p {
     color: #ffffff;
-    font-size: 1.2em;
+    font-size: 1.8em; /* Larger font size */
 }
 
 button {
     background-color: #ff6347;
     color: #ffffff;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Increase padding */
     margin-top: 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -85,7 +85,7 @@ button:active {
     display: none;
     margin-top: 20px;
     color: #ff6347;
-    font-size: 1.2em;
+    font-size: 1.5em; /* Adjusted size */
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -96,10 +96,6 @@ button:active {
     flex-direction: column;
 }
 
-.slide.fade {
-    animation: fadeIn 2s ease-in-out;
-}
-
 .final-slide .final-message {
     font-size: 2.5em;
     color: #ff6347;
@@ -108,7 +104,7 @@ button:active {
 }
 
 .gift-page {
-    display: none; /* Hide gift page initially */
+    display: none;
 }
 
 .gift-options {
@@ -118,15 +114,15 @@ button:active {
 }
 
 .gift-option img {
-    width: 100px;
-    height: 100px;
+    width: 120px; /* Adjust size for images */
+    height: 120px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
 .heart {
     position: absolute;
-    font-size: 2em;
+    font-size: 2.5em; /* Adjust heart size */
     animation: floatUp 1s ease-in-out forwards;
 }
 
@@ -143,106 +139,23 @@ button:active {
 
 @media (max-width: 600px) {
     .card, .second-page, .slideshow-page, .gift-page {
-        padding: 20px;
-        max-width: 90%;
+        padding: 30px; /* Increased padding */
+        width: 90%;
     }
 
     .card h1, .second-page h1, .slideshow-page h1 {
-        font-size: 1.5em;
+        font-size: 2em; /* Slightly larger text for small screens */
     }
 
     .card p, .second-page p, .slideshow-page p {
-        font-size: 1em;
+        font-size: 1.5em; /* Increased font size for better readability */
     }
 
     .header-image, .second-image, .slide-image {
-        max-width: 80%;
+        max-width: 85%; /* Larger image on small screens */
     }
 
     .final-message {
-        font-size: 2em;
+        font-size: 2.5em;
     }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* All previous CSS remains the same */
-
-/* Additional styles for the final message container */
-.final-message-container {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 40px;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 90%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.final-message {
-    font-size: 3.5em;
-    color: #ffffff;
-    margin-top: 20px;
-}
-
-#giftButton {
-    margin-top: 20px;
-}
-
-/* Styles for the gift selection page */
-.gift-selection-page {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 40px;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.gift-option {
-    margin: 20px 0;
-}
-
-.gift-image {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.gift-select-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #ff6347;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    font-family: 'Pacifico', cursive;
-}
-
-.gift-select-button:hover {
-    background-color: #ff4500;
 }
